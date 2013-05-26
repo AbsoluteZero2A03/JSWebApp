@@ -1,0 +1,9 @@
+<div class="content">
+	<h2>BLOG</h2>
+	<div ng-repeat="post in posts">
+		<a href="#/blog/{{post.name}}"><h3>{{post.title}}</h3></a>
+		<p ng-bind-html-unsafe="post.content"></p>
+		<p class="after-post"> by {{post.author}}, posted at {{post.date.replace('T','-').replace('Z','')}}</p>
+		<hr />
+	</div>
+</div>

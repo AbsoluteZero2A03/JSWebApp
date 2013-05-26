@@ -1,0 +1,7 @@
+["Website of me. Some kid from Vancouver, Canada.",
+
+"Here I'll post some stuff I build and stuff that I write, as well as other stuff that I find interesting.",
+
+"Like every person, what I want to see changes all the time, so I'll probably be regularly experimenting with the CSS of this website."]
+
+

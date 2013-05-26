@@ -1,0 +1,9 @@
+<div class="content">
+	<h2>BLOG</h2>
+	<p>Show the last <input ng-model="numPosts"></input> posts </p>
+	<div ng-repeat="post in getBlogPosts(numPosts)">
+		<h3>{{post.title}}</h3>
+		<p>{{post.text}}</p>
+		<hr />
+	</div>
+</div>

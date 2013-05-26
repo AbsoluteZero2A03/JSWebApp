@@ -1,0 +1,26 @@
+.arvo (@type: "Regular") {
+	font-family: "Arvo";
+	@srcb: "lib/fonts/Arvo-";
+	src: @srcb+@type+".ttf";
+}
+
+
+
+@font-face {
+	.arvo;
+}
+
+@font-face {
+	.arvo("Italic");
+	font-weight: italic;
+}
+
+@font-face {
+	.arvo("Bold");
+	font-weight: bold;
+}
+
+@font-face {
+	.arvo("BoldItalic");
+	font-weight: bold, italic;
+}

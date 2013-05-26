@@ -1,0 +1,10 @@
+{
+	heading: "ABOUT THIS SITE",
+
+	list: [ "This site was coded in <a href=\"http://angularjs.org \">AngularJS</a> and is a single-page application.",
+	
+	"This website uses the font Arvo, available at FontSquirrel <a href=\"http://www.fontsquirrel.com/fonts/arvo\">here.</a>",
+	
+	]	
+
+}

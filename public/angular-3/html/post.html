@@ -1,0 +1,23 @@
+<div class="content">
+	<h3>{{blogPost.title}}</h3>
+	<div class="post" ng-bind-html-unsafe="blogPost.content"></div>
+	<p class="after-post"> by {{blogPost.author}}, posted at {{blogPost.date}}</p>
+	<div class="commentBox">
+
+	</div>
+	<div class="comment-form">
+		<p>Leave a comment:</p>		
+		<form action="/comment" method="post">
+			<textarea name="content" cols="40" rows="5" /></textarea><br />
+			<label>Name:</label><input type="text" name="author">	
+			<input type="hidden" name="title" value="{{blogPost.name}}" />
+			<input type="submit" value="submit"></input>			
+		</form>
+	</div>
+	<div ng-repeat="comment in blogPost.comments">
+		<p class="comment-name">{{comment.author}} : </p>
+		<p class="comment-content">{{comment.content}}</p>
+		<p class="after-comment">{{comment.date}}</p>	
+		<hr />
+	</div>
+</div>
